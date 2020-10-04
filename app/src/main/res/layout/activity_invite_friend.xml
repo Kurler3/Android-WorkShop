@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InviteFriend">
+
+    <TextView
+        android:id="@+id/inviteFriendTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Friend"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:id="@+id/inviteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/inviteFriendTitle"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginLeft="220dp"
+            android:text="Moon Cake"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/inviteContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/inviteName"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact:"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginLeft="170dp"
+            android:text="132547562100"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/inviteEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/inviteContact"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email:"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginLeft="130dp"
+            android:text="wetcandy@ubyte.com"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/emailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite By Email"
+        android:layout_below="@id/inviteEmail"
+        android:onClick="InviteLaunch"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/smsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite By SMS"
+        android:onClick="InviteLaunch"
+        android:layout_below="@id/emailBtn"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/callBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite By Call"
+        android:onClick="InviteLaunch"
+        android:layout_below="@id/smsBtn"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

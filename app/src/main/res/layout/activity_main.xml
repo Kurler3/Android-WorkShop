@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/uestcImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="top"
+            android:background="@drawable/uestc_eye_side_view_edited" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A9B8B7"
+            android:layout_below="@id/uestcImage">
+
+            <TextView
+                android:id="@+id/titleWorkShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AndroidWorkshop"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/venue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/titleWorkShop"
+                android:text="Venue:"
+                android:layout_marginLeft="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleWorkShop"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="89dp"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/venue"
+                android:layout_toRightOf="@id/venue"
+                android:text="@string/onlineMeeting"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/DateAndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date and Time:"
+                android:textSize="15sp"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@id/venue"/>
+
+            <TextView
+                android:layout_width="252dp"
+                android:layout_height="23dp"
+                android:layout_below="@id/venue"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@id/DateAndTime"
+                android:layout_toRightOf="@id/DateAndTime"
+                android:text="@string/workshopDate"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="328dp"
+            android:layout_marginTop="171dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/star_badge">
+
+        </ImageView>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollText"/>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/inviteFriendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INVITE FRIEND"
+            android:layout_alignParentEnd="true"
+            />
+        <Button
+            android:id="@+id/joinWorkShopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOIN WORKSHOP"
+            android:layout_toLeftOf="@id/inviteFriendBtn"
+            android:layout_marginRight="10sp"/>
+    </RelativeLayout>
+</LinearLayout>

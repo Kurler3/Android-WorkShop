@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coding-Task-1</string>
+    <string name="AndroidWorkshop">Android WorkShop</string>
+    <string name="onlineMeeting"><u>Online Meeting(Tencent)</u></string>
+    <string name="workshopDate"><u>Oct 1st to 8th,9AM to 11:30AM</u></string>
+    <string name="scrollText">\t \t <i>Hi</i> <b>welcome to the Android Workshop.</b> \n
+        \n
+      \t \t The workshop will utilize this  holiday to equipe you with the
+       \t skills and knowledge to develop your
+       first Android apps and be able to be familiar and easily pursue further advancement in your skills after.
+        \n
+        \n
+\t \t 1. Days: 1st October to 8th October
+        \n
+        \n
+\t \t 2. Time 9:00am to 11:30am
+        \n
+        \n
+\t \t 3. Recommended prerequisite Java,but shouldn\'t stop you from joining.
+        \n
+        \n
+\t \t 4. Installation Links
+        \n
+        \n
+        \t <b>Please install the following things before The Workshop.</b>
+        \n
+        \n
+\t \t  3.1 JRE > 3.2.JRE > https://java.com/en/download/
+        \n
+        \n
+\t \t 3.2 JDK > \n
+        https://www.oracle.com/java/technologies/javase-jdk13-downloads.html
+        \n
+        \n
+\t \t  3.3 Android Studio > \n
+        https://developer.android.google.cn/studio/
+        \n
+        \n
+\t \t 3.4 IntelliJ IDE (community) > https://www.jetbrains.com/idea/
+        \n
+        \n
+\t \t  3.5 Voov/Tencent Meeting > https://voovmeeting.com/download-center.html
+    \n\n</string>
+
+</resources>

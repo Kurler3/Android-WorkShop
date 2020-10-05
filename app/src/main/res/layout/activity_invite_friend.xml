@@ -26,15 +26,17 @@
             android:layout_height="wrap_content"
             android:text="Name:"
             android:textSize="20sp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"/>
 
-        <TextView
-            android:layout_width="203dp"
-            android:layout_height="match_parent"
+        <EditText
+            android:id="@+id/inviteNameInput"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginLeft="220dp"
-            android:text="Moon Cake"
-            android:textSize="20sp" />
+            android:layout_marginLeft="100dp"
+            android:hint="Enter Name"
+            android:textSize="18sp"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/inviteContact"
@@ -48,13 +50,15 @@
             android:layout_height="wrap_content"
             android:text="Contact:"
             android:textSize="20sp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"/>
-        <TextView
-            android:layout_width="197dp"
-            android:layout_height="match_parent"
+        <EditText
+            android:id="@+id/inviteNumberInput"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginLeft="170dp"
-            android:text="132547562100"
+            android:layout_marginLeft="85dp"
+            android:hint="Enter Number"
             android:textSize="20sp" />
     </LinearLayout>
     <LinearLayout
@@ -67,15 +71,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="email:"
+            android:text="Email:"
             android:textSize="20sp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"/>
-        <TextView
-            android:layout_width="197dp"
-            android:layout_height="match_parent"
+        <EditText
+            android:id="@+id/inviteEmailInput"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginLeft="130dp"
-            android:text="wetcandy@ubyte.com"
+            android:layout_marginLeft="105dp"
+            android:hint="Enter Email"
             android:textSize="20sp" />
     </LinearLayout>
     <Button

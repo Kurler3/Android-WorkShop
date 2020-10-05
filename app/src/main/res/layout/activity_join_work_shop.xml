@@ -23,20 +23,22 @@
         android:layout_marginTop="40dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="72dp"
             android:layout_height="wrap_content"
-            android:text="Name:"
-            android:textSize="20sp"
+            android:layout_marginTop="7dp"
             android:layout_marginLeft="10dp"
-            />
-
-        <TextView
-            android:layout_width="193dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:layout_marginLeft="220dp"
-            android:text="Moon Cake"
+            android:text="Name:"
             android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="70dp"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/studentNoLayout"
@@ -49,25 +51,71 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Student No:"
+            android:text="Student No.:"
             android:textSize="20sp"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="10dp"
             />
 
-        <TextView
-            android:layout_width="149dp"
-            android:layout_height="match_parent"
+        <EditText
+            android:id="@+id/stdNumbEdit"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginLeft="140dp"
-            android:text="202014501323"
-            android:textSize="20sp" />
+            android:layout_marginLeft="32dp"
+            android:hint="Enter Student Number"
+            android:inputType="number"
+            android:textSize="18sp" />
     </LinearLayout>
+    <TextView
+        android:id="@+id/programmingExperienceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programming Experience"
+        android:layout_below="@id/studentNoLayout"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"/>
+    <RadioGroup
+        android:id="@+id/programmingExperienceRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/programmingExperienceTitle"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intermediate"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professional"
+            android:textSize="16dp"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/termsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Agree to the Terms and Conditions"
+        android:layout_below="@id/programmingExperienceRadio"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
     <Button
         android:id="@+id/joinNowBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="JOIN NOW"
-        android:layout_below="@id/studentNoLayout"
+        android:layout_below="@id/termsCheckBox"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:onClick="WSAttendantListLaunch"/>

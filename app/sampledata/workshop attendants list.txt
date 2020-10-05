@@ -1,0 +1,29 @@
+RegNo  Name                 StudentNo
+28     Moon Cake            6658773577
+27     Enrique West         8582700617
+26     Damien Braun         4113674062
+25     Ellie Osborne        8373122815
+24     Cierra Vegae         1622737449
+23     Alden Cantrell       0038341717
+22     Kierra Gentry        5071786790
+21     Pierre Cox           2446486879
+20     张三                		 8609412135
+19     张一                 		4694829054
+18     Waneta Cripe         6422532700
+17     Laraine Bundrick     5221099248
+16     Cleotilde Seedorf    4957209795
+15     Lucius Fonte         1900965047
+14     Byron Rotolo         0995559113
+13     Lynell Cronin        9679347496
+12     Alejandro Russel     6751113249
+11     Tenesha Perkins      2500204389
+10     Emilee Marmolejo     4113894342
+ 9     Soraya Reily         7862522427
+ 8     Miriam Goodwyn       6479771548
+ 7     Dorsey Aaronson      2744528464
+ 6     Jeanice Prim         4544205110
+ 5     Staci Gomer          2798540578
+ 4     Nisha Feth           4476399325
+ 3     Debrah Mathes        6807154666
+ 2     Bunny Osuna          5496979659
+ 1     Earline Danks        1137481706

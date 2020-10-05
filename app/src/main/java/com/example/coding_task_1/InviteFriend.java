@@ -3,6 +3,7 @@ package com.example.coding_task_1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,15 +19,21 @@ public class InviteFriend extends AppCompatActivity {
     public void InviteLaunch(View view) {
         switch(view.getId()){
             case R.id.emailBtn:
-                startActivity(new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:")));
+                Intent i1 = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"));
+                if(i1.resolveActivity(getPackageManager())!=null) {
+                    startActivity(i1);
+                }
                 break;
             case R.id.smsBtn:
-                Intent i2 = new Intent(Intent.ACTION_MAIN);
+                Intent i2 = new Intent(Intent.ACTION_VIEW,Uri.parse("sms:"));
                 i2.addCategory(Intent.CATEGORY_APP_MESSAGING);
-                startActivity(i2);
+                if(i2.resolveActivity(getPackageManager())!=null)
+                    startActivity(i2);
                 break;
             case R.id.callBtn:
-                startActivity(new Intent(Intent.ACTION_DIAL));
+                Intent i3 = new Intent(Intent.ACTION_VIEW,Uri.parse("tel:"));
+                if(i3.resolveActivity(getPackageManager())!=null)
+                    startActivity(i3);
                 break;
         }
     }

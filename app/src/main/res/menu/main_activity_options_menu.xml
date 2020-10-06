@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item
+         android:id="@+id/viewAttendantList"
+         android:title="View Attendant List"
+         android:icon="@mipmap/baseline_visibility_black_36"
+         app:showAsAction="always"/>
+     <item
+          android:title="About App"
+          android:id="@+id/infoOption"
+          app:showAsAction="never"/>
+</menu>

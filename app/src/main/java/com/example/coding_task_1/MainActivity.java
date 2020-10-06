@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.viewAttendantList:
-                ShowAttendantsList();
+                startActivity(new Intent(MainActivity.this, Attendants.class));
                 return true;
             case R.id.infoOption:
                 ShowInfoDialog();
@@ -62,16 +62,14 @@ public class MainActivity extends AppCompatActivity {
 
         dialog.setTitle("Android WorkShop")
         .setMessage("This is the Android WorkShop app, for joining and inviting friends to join the workshop")
-        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
             }
         });
+
         AlertDialog alertDialog = dialog.create();
         alertDialog.show();
-    }
-    private void ShowAttendantsList(){
-        startActivity(new Intent(MainActivity.this, Attendants.class));
     }
 }

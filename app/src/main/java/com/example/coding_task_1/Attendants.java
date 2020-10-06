@@ -1,9 +1,12 @@
 package com.example.coding_task_1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -23,12 +26,13 @@ public class Attendants extends AppCompatActivity {
         ArrayList<String> attendantArray = new ArrayList<>();
         attendantArray = AddNamesToListView(attendantArray);
 
-        String input = getIntent().getStringExtra("input");
-        if(!input.isEmpty()){
-            String itemToAdd = String.valueOf(attendantArray.size()) + ". " + input;
-            attendantArray.add(0,itemToAdd);
-        }
-
+        try{
+            String input = getIntent().getStringExtra("input");
+            if(!input.isEmpty()){
+                String itemToAdd = String.valueOf(attendantArray.size()) + ". " + input;
+                attendantArray.add(0,itemToAdd);
+            }
+        }catch (Exception e){}
         listAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,attendantArray);
         attendantListView.setAdapter(listAdapter);
     }
@@ -67,5 +71,23 @@ public class Attendants extends AppCompatActivity {
             attendantArray.set(i,index + ". " + attendantArray.get(i));
         }
         return attendantArray;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.attendants_option_menu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.joinWorkshopOption:
+                startActivity(new Intent(Attendants.this,JoinWorkShop.class));
+                return true;
+            case R.id.inviteOption:
+                startActivity(new Intent(Attendants.this, InviteFriend.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
